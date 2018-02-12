@@ -36,7 +36,7 @@ build() {
   LDFLAGS="-Wl,-O1 -Wl,--hash-style=both -pie" \
   ./configure \
     --prefix=/usr \
-    --with-php-config=/usr/bin/php-config
+    --with-php-config=/usr/bin/php-config \
     --enable-async-redis
   make -j$jobs
 }
