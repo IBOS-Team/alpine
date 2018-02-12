@@ -37,7 +37,7 @@ build() {
   ./configure \
     --prefix=/usr \
     --with-php-config=/usr/bin/php-config
-
+    --enable-async-redis
   make -j$jobs
 }
 
